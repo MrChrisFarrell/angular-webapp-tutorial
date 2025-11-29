@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.css or a global CSS file */
+:root {
+  --primary-color: #4CAF50; /* Your desired primary color */
+  --secondary-color: #FFC107; /* Example secondary color */
+}
