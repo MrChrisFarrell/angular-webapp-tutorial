@@ -108,12 +108,17 @@ export class HousingService {
         wifi: true,
         laundry: true,
       }
-    ];
+  ];
 
-    getAllHousingLocations(): HousingLocationInfo[] {
+  getAllHousingLocations(): HousingLocationInfo[] {
     return this.housingLocationList;
   }
   getHousingLocationById(id: number): HousingLocationInfo | undefined {
     return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
+  }
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(
+      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
+    );
   }
 }
